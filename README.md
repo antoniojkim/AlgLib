@@ -10,6 +10,7 @@ Collection of Implementations of Algorithms
 
 ## Dynamic Programming
 * [0/1 Integer Weight Knapsack Problem](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/01%20Knapsack/01_knapsack.py#L3)
+* [Matrix Multiplication Ordering](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Matrix%20Multiplication%20Order/matmul_order.py#L3)
 
 ## Graphs
 
