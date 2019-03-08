@@ -13,9 +13,12 @@ Collection of Implementations of Algorithms
 
 ## Graphs
 
+### Graph Implementations
+
 * [Adjacency Matrix Graph](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/graphs.py#L58)
 * [Adjacency List Graph](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/graphs.py#L109)
 
+### Graph Algorithms
 
 * [Breadth-First Search](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/BFS/BFS.py#L8)
 * [Depth-First Search](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/DFS/DFS.py#L7)
