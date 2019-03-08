@@ -10,24 +10,28 @@ class Graph:
 
     def __lshift__(self, v):
         self.add_vertex(v)
+        return self
 
     def remove_vertex(self, v):
         pass
 
     def __rshift__(self, v):
         self.remove_vertex(v)
+        return self
 
     def add_edge(self, e):
         pass
 
     def __iadd__(self, e):
         self.add_edge(e)
+        return self
 
     def remove_edge(self, e):
         pass
 
     def __isub__(self, e):
         self.remove_edge(e)
+        return self
 
     def contains_vertex(self, v):
         return False
@@ -46,6 +50,9 @@ class Graph:
 
     def __getitem__(self, v):
         return self.get_edges(v)
+
+    def get_vertices(self):
+        pass
 
 
 class AdjacencyMatrix(Graph):
@@ -93,6 +100,9 @@ class AdjacencyMatrix(Graph):
     def get_edges(self, v):
         u = self.V.index(v)
         return (self.V[i] for i, e in enumerate(self.E[u]) if e)
+
+    def get_vertices(self):
+        return self.V
     
 
 
@@ -132,8 +142,11 @@ class AdjacencyList(Graph):
     def get_edges(self, v):
         assert(v in self.V)
         return (k for k in self.V[v])
+
+    def get_vertices(self):
+        return (k for k in self.V)
     
 
 
 def create_graph(V, E, directed=True):
-    return AdjacencyList(V, E)
+    return AdjacencyList(V, E, directed)
