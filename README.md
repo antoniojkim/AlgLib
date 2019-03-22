@@ -11,6 +11,8 @@ Collection of Implementations of Algorithms
 ## Dynamic Programming
 * [0/1 Integer Weight Knapsack Problem](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/01%20Knapsack/01_knapsack.py#L3)
 * [Matrix Multiplication Ordering](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Matrix%20Multiplication%20Order/matmul_order.py#L3)
+* [Subset Threshold](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/SubsetThreshold/subsetThreshold.py#L16)
+* [Minimum Squared Sums of Chunk Sums](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/MinSumChunk/minSumChunk.py#L15)
 
 ## Graphs
 
@@ -23,6 +25,8 @@ Collection of Implementations of Algorithms
 
 * [Breadth-First Search](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/BFS/BFS.py#L8)
 * [Depth-First Search](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/DFS/DFS.py#L7)
+* [Topological Sort](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Topological%20Sort/topsort.py#L7)
+* [Kosaraju's Algorithm](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Kosaraju's%20Algorithm/kosaraju.py#L11)
 
 
 ## Greedy
