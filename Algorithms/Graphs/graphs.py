@@ -128,8 +128,10 @@ class AdjacencyList(Graph):
                 self.V[e[1]][e[0]] = True
 
     def remove_edge(self, e):
-        if (e[0] in self.V and e[1] in self.V):
+        if (e[0] in self.V and e[1] in self.V and e[1] in self.V[e[0]]):
+            print(self.V[e[0]], end="  ")
             self.V[e[0]].pop(e[1], None)
+            print(self.V[e[0]])
             if (not self.directed):
                 self.V[e[1]].pop(e[0], None)
 
@@ -145,8 +147,22 @@ class AdjacencyList(Graph):
 
     def get_vertices(self):
         return (k for k in self.V)
+
+    def __str__(self):
+        return str(self.V)
     
 
 
 def create_graph(V, E, directed=True):
     return AdjacencyList(V, E, directed)
+
+
+
+def reverse_graph(G):
+    Grev = create_graph(G.get_vertices(), [], G.directed)
+    
+    for u in G.get_vertices():
+        for v in G[u]:
+            Grev.add_edge((v, u))
+            
+    return Grev

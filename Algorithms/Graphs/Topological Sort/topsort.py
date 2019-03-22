@@ -7,23 +7,26 @@ from graphs import create_graph
 def topsort(G):
     i = 0    
     visited = {v:False for v in G.get_vertices()}
+    ft = {v:None for v in G.get_vertices()}
     
     def DFS(u):
         nonlocal i
         nonlocal visited
         
+        visited[u] = True
+        
         for v in G[u]:
             if (visited[v] == False):
                 DFS(v)
-        
-        visited[u] = i
+                
+        ft[u] = i
         i += 1
     
     for u in visited:
         if (visited[u] == False):
             DFS(u)
     
-    return sorted(visited, key=visited.get, reverse=True)
+    return sorted(ft, key=ft.get, reverse=True)
 
 
 if __name__ == "__main__":
