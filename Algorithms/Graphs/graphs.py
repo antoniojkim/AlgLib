@@ -54,6 +54,9 @@ class Graph:
     def get_vertices(self):
         pass
 
+    def get_weight(self, u, v):
+        pass
+
 
 class AdjacencyMatrix(Graph):
 
@@ -123,15 +126,13 @@ class AdjacencyList(Graph):
 
     def add_edge(self, e):
         if (e[0] in self.V and e[1] in self.V):
-            self.V[e[0]][e[1]] = True
+            self.V[e[0]][e[1]] = e[2] if len(e) >= 3 else 0
             if (not self.directed):
-                self.V[e[1]][e[0]] = True
+                self.V[e[1]][e[0]] = e[2] if len(e) >= 3 else 0
 
     def remove_edge(self, e):
         if (e[0] in self.V and e[1] in self.V and e[1] in self.V[e[0]]):
-            print(self.V[e[0]], end="  ")
             self.V[e[0]].pop(e[1], None)
-            print(self.V[e[0]])
             if (not self.directed):
                 self.V[e[1]].pop(e[0], None)
 
@@ -141,12 +142,21 @@ class AdjacencyList(Graph):
     def contains_edge(self, e):
         return e[0] in self.V and e[1] in self.V[e[1]]
 
-    def get_edges(self, v):
+    def get_edges(self, v=None):
+        if (v is None):
+            if (self.directed):
+                return ((u, k) for u in self.V for k in self.V[u])
+            else:
+                return set(tuple(sorted([u, k])) for u in self.V for k in self.V[u])
+            
         assert(v in self.V)
         return (k for k in self.V[v])
 
     def get_vertices(self):
         return (k for k in self.V)
+
+    def get_weight(self, u, v):
+        return self.V[u][v]
 
     def __str__(self):
         return str(self.V)
