@@ -26,7 +26,7 @@ Collection of Implementations of Algorithms
 * [Breadth-First Search](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/BFS/BFS.py#L8)
 * [Depth-First Search](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/DFS/DFS.py#L7)
 * [Topological Sort](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Topological%20Sort/topsort.py#L7)
-* [Kosaraju's Algorithm](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Kosaraju's%20Algorithm/kosaraju.py#L11)
+* [Kosaraju's Algorithm](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Kosaraju's%20Algorithm/kosaraju.py#L11)* [Kruskal's Algorithm](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Kruskal's%20Algorithm/kruskal.py#L8)
 
 
 ## Greedy
