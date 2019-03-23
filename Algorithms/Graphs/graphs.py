@@ -111,11 +111,14 @@ class AdjacencyMatrix(Graph):
 
 class AdjacencyList(Graph):
 
-    def __init__(self, V, E, directed=True):
+    def __init__(self, V, E, directed=True, track_in=False, **kwargs):
         super().__init__(V, E, directed)
         self.V = {v:{} for v in V}
+        self.track_in = track_in
+        if track_in: self.in_edges = {v:{} for v in V}
         for e in E:
             self.add_edge(e)
+        
 
     def add_vertex(self, v):
         if (v not in self.V):
@@ -129,6 +132,8 @@ class AdjacencyList(Graph):
             self.V[e[0]][e[1]] = e[2] if len(e) >= 3 else 0
             if (not self.directed):
                 self.V[e[1]][e[0]] = e[2] if len(e) >= 3 else 0
+            if (self.track_in):
+                self.in_edges[e[1]][e[0]] = e[2] if len(e) >= 3 else 0
 
     def remove_edge(self, e):
         if (e[0] in self.V and e[1] in self.V and e[1] in self.V[e[0]]):
@@ -146,11 +151,17 @@ class AdjacencyList(Graph):
         if (v is None):
             if (self.directed):
                 return ((u, k) for u in self.V for k in self.V[u])
+            elif (self.track_in):
+                return ((k, u) for u in self.in_edges for k in self.in_edges[u])
             else:
                 return set(tuple(sorted([u, k])) for u in self.V for k in self.V[u])
             
         assert(v in self.V)
         return (k for k in self.V[v])
+
+    def get_in_edges(self, v):
+        assert(v in self.in_edges)
+        return iter(self.in_edges[v])
 
     def get_vertices(self):
         return (k for k in self.V)
@@ -163,8 +174,8 @@ class AdjacencyList(Graph):
     
 
 
-def create_graph(V, E, directed=True):
-    return AdjacencyList(V, E, directed)
+def create_graph(*args, **kwargs):
+    return AdjacencyList(*args, **kwargs)
 
 
 
