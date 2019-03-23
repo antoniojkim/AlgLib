@@ -10,7 +10,6 @@ def sssp_dag(G, s):
     f = topsort(G)
     SD = {v:(0 if v == s else np.inf) for v in f}
     paths = {v:[] for v in f}
-#     paths[s].append(s)
     
     for v in f:
         curpath = []
