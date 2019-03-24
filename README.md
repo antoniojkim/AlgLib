@@ -32,6 +32,7 @@ Collection of Implementations of Algorithms
 ### Short Path Algorithms
 
 * [Single Source Shortest Path for DAG](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Shortest%20Path/SSSP%20DAG/ssspdag.py#L9)
+* [Dijkstra's Algorithm](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Shortest%20Path/Dijkstra's%20Algorithm/dijkstra.py#L10)
 
 
 ## Greedy
