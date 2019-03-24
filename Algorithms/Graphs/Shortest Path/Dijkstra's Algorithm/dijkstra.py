@@ -19,7 +19,6 @@ def dijkstra(G, s):
     dSoFarDict = {}
     
     i = 0
-    
     entry = [0, i, s]
     i += 1
     dSoFarDict[s] = entry
@@ -31,12 +30,13 @@ def dijkstra(G, s):
             dSoFarDict[v] = entry
             heapq.heappush(dSoFar, entry)
             
-    for i in range(len(SD)-1):
+    for _ in range(len(SD)-1):
         while dSoFar[0][2] is None:
             heapq.heappop(dSoFar)
             
         min_d = heapq.heappop(dSoFar)
         vprime = min_d[2]
+        
         R.discard(vprime)
         L.add(vprime)
         SD[vprime] = min_d[0]
@@ -45,13 +45,17 @@ def dijkstra(G, s):
             if z in R:
                 newDistToZ = SD[vprime]+G.get_weight(vprime, z)
                 if (newDistToZ < dSoFarDict[z][0]):
+                    # decrease key
                     dSoFarDict[z][2] = None
                     entry = [newDistToZ, i, z]
                     i += 1
                     dSoFarDict[z] = entry
                     heapq.heappush(dSoFar, entry)
+                    
+                    #set parent
                     parent[z] = vprime
                     
+                    # record path
                     paths[z] = paths[vprime]+[z]
     
     return paths
