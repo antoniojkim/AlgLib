@@ -14,7 +14,7 @@ def dijkstra(G, s):
     parent = {v:v for v in G.get_vertices()}
     paths = {v:[] for v in G.get_vertices()}
     paths[s] = [s]
-    
+    untitled.txt
     dSoFar = []
     dSoFarDict = {}
     
@@ -61,14 +61,14 @@ def dijkstra(G, s):
     return paths
 
 
-def test(result, expected):
+def test_dijkstra(result, expected):
     for v in expected:
         if (set(result[v]) != set(expected[v])):
             raise Exception(f"{v}:  {result[v]} != {expected[v]}")
 
 
 if __name__ == "__main__":
-    test(dijkstra(create_graph(
+    test_dijkstra(dijkstra(create_graph(
         ["A", "B", "C", "D", "E", "F", "G", "H"],
         [("A", "B", 4),
          ("A", "C", 8),
