@@ -29,11 +29,12 @@ Collection of Implementations of Algorithms
 * [Kosaraju's Algorithm (Strongly Connected Components)](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Kosaraju's%20Algorithm/kosaraju.py#L11)
 * [Kruskal's Algorithm (Minimum Spanning Tree)](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Kruskal's%20Algorithm/kruskal.py#L8)
 
-### Short Path Algorithms
+### Shortest Path Algorithms
 
 * [Single Source Shortest Path for DAG](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Shortest%20Path/SSSP%20DAG/ssspdag.py#L9)
 * [Dijkstra's Algorithm](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Shortest%20Path/Dijkstra's%20Algorithm/dijkstra.py#L10)
 * [Bellman-Ford Algorithm](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Shortest%20Path/Bellman-Ford%20Algorithm/bellmanford.py#L9)
+* [Floyd-Warshall Algorithm](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Shortest%20Path/Floyd-Warshall/floydWarshall.py#L8)
 
 
 ## Greedy
