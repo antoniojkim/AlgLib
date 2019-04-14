@@ -14,6 +14,7 @@ Collection of Implementations of Algorithms
 * [Subset Threshold](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/SubsetThreshold/subsetThreshold.py#L16)
 * [Minimum Squared Sums of Chunk Sums](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/MinSumChunk/minSumChunk.py#L15)
 * [Kadane's Algorithm (Maximum Subarray)](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Kadane's%20Algorithm/kadane.py#L3)
+* [Longest Increasing Subsequence](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Longest%20Increasing%20Subsequence/lis.py#L4)
 
 ## Graphs
 
