@@ -13,6 +13,7 @@ Collection of Implementations of Algorithms
 * [Matrix Multiplication Ordering](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Matrix%20Multiplication%20Order/matmul_order.py#L3)
 * [Subset Threshold](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/SubsetThreshold/subsetThreshold.py#L16)
 * [Minimum Squared Sums of Chunk Sums](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/MinSumChunk/minSumChunk.py#L15)
+* [Kadane's Algorithm (Maximum Subarray)](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Kadane's%20Algorithm/kadane.py#L3)
 
 ## Graphs
 
