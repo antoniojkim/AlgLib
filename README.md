@@ -17,6 +17,7 @@ Collection of Implementations of Algorithms
 * [Kadane's Algorithm (Maximum Subarray)](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Kadane's%20Algorithm/kadane.py#L3)
 * [Longest Increasing Subsequence](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Longest%20Increasing%20Subsequence/lis.py#L4)
 * [Linear Independent Set](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Linear%20Independent%20Set/lis.py#L3)
+* [Longest Palindrome Substring](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Longest%20Palindrome%20Substring/lps.py#L4)
 
 ## Graphs
 
