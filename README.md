@@ -8,6 +8,7 @@ Collection of Implementations of Algorithms
 * [Karatsuba-Ofman Integer Multiplication](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Karatsuba-Ofman/KO.py#L6)
  * [Polynomial Multiplication using Karatsuba-Ofman Variation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Karatsuba-Ofman/poly_mul.py#L6)
  * [Binary to Decimal](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Bin%20to%20Dec/binToDec.py#L3)
+ * [Shamos's Algorithm for Closest Pair 2D](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Shamos's%20Algorithm/shamos.py#L21)
 
 ## Dynamic Programming
 * [0/1 Integer Weight Knapsack Problem](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/01%20Knapsack/01_knapsack.py#L3)
