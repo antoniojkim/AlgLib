@@ -47,5 +47,6 @@ Collection of Implementations of Algorithms
 ## Greedy
 
 * [Stable Matching](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Stable%20Matching/stableMatching.py#L3)
+* [Merge K Lists](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Merge/mergeKlists.py#L5)
 
 
