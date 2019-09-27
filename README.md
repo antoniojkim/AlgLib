@@ -49,4 +49,6 @@ Collection of Implementations of Algorithms
 * [Stable Matching](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Stable%20Matching/stableMatching.py#L3)
 * [Merge K Lists](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Merge/mergeKlists.py#L5)
 
+## Statistics
 
+* [Linear Regression (Least-Squares)](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Statistics/Linear%20Regression/Linear%20Regression.pdf)
