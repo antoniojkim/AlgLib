@@ -111,11 +111,10 @@ class AdjacencyMatrix(Graph):
 
 class AdjacencyList(Graph):
 
-    def __init__(self, V, E, directed=True, track_in=False, **kwargs):
+    def __init__(self, V, E, directed=True, **kwargs):
         super().__init__(V, E, directed)
         self.V = {v:{} for v in V}
-        self.track_in = track_in
-        if track_in: self.in_edges = {v:{} for v in V}
+        self.in_edges = {v:{} for v in V}
         for e in E:
             self.add_edge(e)
         
@@ -132,14 +131,16 @@ class AdjacencyList(Graph):
             self.V[e[0]][e[1]] = e[2] if len(e) >= 3 else 0
             if (not self.directed):
                 self.V[e[1]][e[0]] = e[2] if len(e) >= 3 else 0
-            if (self.track_in):
+            else:
                 self.in_edges[e[1]][e[0]] = e[2] if len(e) >= 3 else 0
 
     def remove_edge(self, e):
         if (e[0] in self.V and e[1] in self.V and e[1] in self.V[e[0]]):
-            self.V[e[0]].pop(e[1], None)
+            self.V[e[0]] = [edge for edge in self.V[e[0]] if edge != e[1]]
             if (not self.directed):
-                self.V[e[1]].pop(e[0], None)
+                self.V[e[1]] = [edge for edge in self.V[e[1]] if edge != e[0]]
+            else:
+                self.in_edges[e[1]] = [edge for edge in self.in_edges[e[1]] if edge != e[0]]
 
     def contains_vertex(self, v):
         return v in self.V
