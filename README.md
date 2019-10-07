@@ -10,6 +10,7 @@ Collection of Implementations of Algorithms
  * [Binary to Decimal](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Bin%20to%20Dec/binToDec.py#L3)
  * [Shamos's Algorithm for Closest Pair 2D](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Shamos's%20Algorithm/shamos.py#L21)
  * [Median of Two Sorted Lists](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Median/median2list.py#L29)
+ * [QuickSelect](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/QuickSelect/quick_select.py#L4)
 
 ## Dynamic Programming
 * [0/1 Integer Weight Knapsack Problem](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/01%20Knapsack/01_knapsack.py#L3)
