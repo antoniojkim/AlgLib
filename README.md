@@ -21,6 +21,7 @@ Collection of Implementations of Algorithms
 * [Longest Increasing Subsequence](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Longest%20Increasing%20Subsequence/lis.py#L4)
 * [Linear Independent Set](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Linear%20Independent%20Set/lis.py#L3)
 * [Longest Palindrome Substring](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Longest%20Palindrome%20Substring/lps.py#L4)
+* [Maximum of Minimum of sum of k segments](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Maximum%20of%20Minimum%20Sum%20of%20Segments/max_min_sum_segments.py#L17)
 
 ## Graphs
 
