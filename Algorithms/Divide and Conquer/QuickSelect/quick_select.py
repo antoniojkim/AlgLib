@@ -14,7 +14,7 @@ def quickselect(N, k):
         nonlocal N
         N[i], N[j] = N[j], N[i]
 
-    def partition(left, right, pivot_index):
+    def partition(left, right, pivot_index):  # Lomuto Partition
         pivot = N[pivot_index]
         swap(pivot_index, right)
         store_index = left
@@ -26,7 +26,7 @@ def quickselect(N, k):
         swap(right, store_index)
         return store_index
 
-    def select(left, right, k):
+    def select(left, right):
         while True:
             if left == right:
                 return N[left]
@@ -42,7 +42,7 @@ def quickselect(N, k):
             else:
                 left = pivot_index + 1
 
-    return select(0, len(N)-1, k)
+    return select(0, len(N)-1)
 
 
 if __name__ == "__main__":
