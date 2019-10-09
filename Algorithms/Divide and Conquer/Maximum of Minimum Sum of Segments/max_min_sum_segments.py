@@ -5,7 +5,7 @@ import itertools
 def naive_max_min_sum_segments(A, k):
     max_sum = -np.inf
 
-    for ts in list(itertools.combinations(range(1, len(A)), k-1)):
+    for ts in itertools.combinations(range(1, len(A)), k-1):
         ts = sorted([0]+list(ts)+[len(A)])
         chunk_sum = min(sum(A[ts[i-1]:ts[i]]) for i in range(1, len(ts)))
         if (chunk_sum > max_sum):
@@ -16,10 +16,9 @@ def naive_max_min_sum_segments(A, k):
 
 def max_min_sum_segments(A, k):
     '''
-    Split an array of integers A into k segments
-    such that the minimum of the sums of the
-    segments is maximized. Return the maximum
-    value.
+    Split an array of integers A into k contiguous 
+    segments such that the minimum of the sums of the
+    segments is maximized. Return the maximum value.
 
     Parameters
     ----------

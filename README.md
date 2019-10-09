@@ -11,6 +11,7 @@ Collection of Implementations of Algorithms
  * [Shamos's Algorithm for Closest Pair 2D](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Shamos's%20Algorithm/shamos.py#L21)
  * [Median of Two Sorted Lists](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Median/median2list.py#L29)
  * [QuickSelect](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/QuickSelect/quick_select.py#L4)
+* [Maximum of Minimum of sum of k segments](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Maximum%20of%20Minimum%20Sum%20of%20Segments/max_min_sum_segments.py#L17)
 
 ## Dynamic Programming
 * [0/1 Integer Weight Knapsack Problem](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/01%20Knapsack/01_knapsack.py#L3)
@@ -21,7 +22,6 @@ Collection of Implementations of Algorithms
 * [Longest Increasing Subsequence](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Longest%20Increasing%20Subsequence/lis.py#L4)
 * [Linear Independent Set](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Linear%20Independent%20Set/lis.py#L3)
 * [Longest Palindrome Substring](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Longest%20Palindrome%20Substring/lps.py#L4)
-* [Maximum of Minimum of sum of k segments](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Maximum%20of%20Minimum%20Sum%20of%20Segments/max_min_sum_segments.py#L17)
 
 ## Graphs
 
