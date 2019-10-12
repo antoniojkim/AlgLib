@@ -64,13 +64,14 @@ def print_ll(ll):
         
     print(end.val)
     
-def print_bt(root):
+def print_bt(root, indent=""):
     if root is None:
         return
     
-    print_bt(root.prev)
-    print(root.val)
-    print_bt(root.next)
+    print_bt(root.prev, indent + "    ")
+    print(indent, root.val)
+    print_bt(root.next, indent + "    ")
+    
 
 if __name__ == '__main__':
     
