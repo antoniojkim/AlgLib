@@ -7,9 +7,9 @@ def naive_max_min_sum_segments(A, k):
 
     for ts in itertools.combinations(range(1, len(A)), k-1):
         ts = sorted([0]+list(ts)+[len(A)])
-        chunk_sum = min(sum(A[ts[i-1]:ts[i]]) for i in range(1, len(ts)))
-        if (chunk_sum > max_sum):
-            max_sum = chunk_sum
+        min_sum = min(sum(A[ts[i-1]:ts[i]]) for i in range(1, len(ts)))
+        if (min_sum > max_sum):
+            max_sum = min_sum
         
     return max_sum
 
