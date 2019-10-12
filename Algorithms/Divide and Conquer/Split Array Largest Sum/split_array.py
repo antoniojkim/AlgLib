@@ -20,15 +20,6 @@ def split_array(nums, m):
     split the array into m non-empty continuous subarrays. The following algorithm
     minimizes the largest sum among these m subarrays.
     '''
-    # n = len(nums)
-    # A = np.zeros((n, n), dtype=int)
-
-    # for i in range(len(nums)):
-    #     A[i][i] = nums[i]
-    #     for j in range(i+1, len(nums)):
-    #         A[i][j] = A[i][j-1] + nums[j]
-
-    # sum_set = set(A.reshape(-1).tolist())
         
     def split(max_sum):
 

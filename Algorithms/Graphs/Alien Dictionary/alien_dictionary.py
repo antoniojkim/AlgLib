@@ -8,6 +8,9 @@ sys.path.append("../Topological Sort")
 from graphs import create_graph
 from topsort import topsort
 
+def verify_alien_language(sorted_words, alphabet):
+    
+
 
 def derive_alien_language(sorted_words):
     '''
