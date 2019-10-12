@@ -34,7 +34,12 @@ class Node:
         
         
 def binary_tree_to_doubly_linked_list(root):
-    if root is None or (root.left is None and root.right is None):
+    if root is None:
+        return root, root
+    
+    if root.left is None and root.right is None:
+        root.left = root
+        root.right = root
         return root, root
     
     ll = None
