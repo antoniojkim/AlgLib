@@ -5,6 +5,9 @@ sys.path.append("../")
 from graphs import create_graph
 
 def topsort(G):
+    '''
+    Topologically sort the graph
+    '''
     i = 0    
     visited = {v:False for v in G.get_vertices()}
     ft = {v:None for v in G.get_vertices()}
