@@ -22,7 +22,7 @@ Collection of Implementations of Algorithms
 * [Longest Increasing Subsequence](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Longest%20Increasing%20Subsequence/lis.py#L4)
 * [Linear Independent Set](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Linear%20Independent%20Set/lis.py#L3)
 * [Longest Palindrome Substring](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Longest%20Palindrome%20Substring/lps.py#L4)
-* [Longest Contiguous Equal Binary]()
+* [Longest Contiguous Equal Binary](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Longest%20Contiguous%20Equal%20Binary/equal_binary.py#L18)
 
 ## Graphs
 
