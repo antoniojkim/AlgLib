@@ -60,6 +60,7 @@ Collection of Implementations of Algorithms
 * [Merge K Lists](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Merge/mergeKlists.py#L5)
 * [Set Intersection](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Set%20Intersection/set_intersection.py)
 * [Well-Formed Brackets](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Well-formed%20Brackets/wf_brackets.py#L28)
+* [Odd One Out](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Odd%20One%20Out/odd_one_out.py#L6)
 
 ## Statistics
 
