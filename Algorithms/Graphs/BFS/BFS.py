@@ -1,34 +1,30 @@
-
+# -*- coding: utf-8 -*-
+import os
 import sys
-sys.path.append("../")
-
-from graphs import create_graph
 from collections import deque
 
-def BFS(G, u, v):
-    '''
-    Check if there exists a path from u to v
-    '''
-    assert(u in G and v in G)
+file_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.join(file_dir, "../"))
 
-    V = {k:False for k in G.get_vertices()} # visited
+from graphs import Graph
+
+
+def BFS(G: Graph, u: str, v: str) -> bool:
+    """
+    Check if there exists a path from u to v
+    """
+    assert u in G and v in G
+
+    V = {k: False for k in G.get_vertices()}  # visited
     Q = deque([u])
     while len(Q) > 0:
         n = Q.popleft()
         V[n] = True
-        if (n == v):
+        if n == v:
             return True
         else:
             for k in G[n]:
-                if (V[k] == False):
+                if not V[k]:
                     Q.append(k)
 
     return False
-
-
-if __name__ == "__main__":
-    G = create_graph(["A", "B", "C"], [("A", "B"), ("B", "C")])
-    assert(BFS(G, "A", "C") == True)
-    assert(BFS(G, "C", "A") == False)
-    print("All BFS Tests Passed!")
-    

@@ -1,50 +1,36 @@
-
+# -*- coding: utf-8 -*-
+import os
 import sys
-sys.path.append("../")
+from typing import List
 
-from graphs import create_graph
+file_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.join(file_dir, "../"))
 
-def topsort(G):
-    '''
+from graphs import Graph
+
+
+def topsort(G: Graph) -> List[str]:
+    """
     Topologically sort the graph
-    '''
-    i = 0    
-    visited = {v:False for v in G.get_vertices()}
-    ft = {v:None for v in G.get_vertices()}
-    
+    """
+    i = 0
+    visited = {v: False for v in G.get_vertices()}
+    ft = {v: None for v in G.get_vertices()}
+
     def DFS(u):
-        nonlocal i
-        nonlocal visited
-        
+        nonlocal i, visited, ft
+
         visited[u] = True
-        
+
         for v in G[u]:
-            if (visited[v] == False):
+            if not visited[v]:
                 DFS(v)
-                
+
         ft[u] = i
         i += 1
-    
+
     for u in visited:
-        if (visited[u] == False):
+        if not visited[u]:
             DFS(u)
-    
+
     return sorted(ft, key=ft.get, reverse=True)
-
-
-if __name__ == "__main__":
-    dag = create_graph(
-        ["A", "B", "C", "D", "E", "F", "G", "H"], 
-        [("A", "B"), 
-         ("A", "C"), 
-         ("H", "A"),
-         ("H", "D"),
-         ("D", "F"),
-         ("E", "H"),
-         ("E", "G"),
-         ("G", "D")]
-    )
-    
-    print(topsort(dag))
-
-

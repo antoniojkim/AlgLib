@@ -5,38 +5,33 @@ Collection of Implementations of Algorithms
 
 ## Divide and Conquer
 
+* [Binary to Decimal](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Bin%20to%20Dec/binToDec.py#L3)
 * [Karatsuba-Ofman Integer Multiplication](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Karatsuba-Ofman/KO.py#L6)
- * [Polynomial Multiplication using Karatsuba-Ofman Variation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Karatsuba-Ofman/poly_mul.py#L6)
- * [Binary to Decimal](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Bin%20to%20Dec/binToDec.py#L3)
- * [Shamos's Algorithm for Closest Pair 2D](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Shamos's%20Algorithm/shamos.py#L21)
- * [Median of Two Sorted Lists](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Median/median2list.py#L29)
- * [QuickSelect](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/QuickSelect/quick_select.py#L4)
 * [Maximum of Minimum of sum of k segments](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Maximum%20of%20Minimum%20Sum%20of%20Segments/max_min_sum_segments.py#L17)
+* [Median of Two Sorted Lists](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Median/median2list.py#L29)
+* [Polynomial Multiplication using Karatsuba-Ofman Variation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Karatsuba-Ofman/poly_mul.py#L6)
+* [QuickSelect](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/QuickSelect/quick_select.py#L4)
+* [Shamos's Algorithm for Closest Pair 2D](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Shamos's%20Algorithm/shamos.py#L21)
 
 ## Dynamic Programming
 * [0/1 Integer Weight Knapsack Problem](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/01%20Knapsack/01_knapsack.py#L3)
-* [Matrix Multiplication Ordering](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Matrix%20Multiplication%20Order/matmul_order.py#L3)
-* [Subset Threshold](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/SubsetThreshold/subsetThreshold.py#L16)
-* [Minimum Squared Sums of Chunk Sums](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/MinSumChunk/minSumChunk.py#L15)
 * [Kadane's Algorithm (Maximum Subarray)](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Kadane's%20Algorithm/kadane.py#L3)
-* [Longest Increasing Subsequence](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Longest%20Increasing%20Subsequence/lis.py#L4)
 * [Linear Independent Set](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Linear%20Independent%20Set/lis.py#L3)
-* [Longest Palindrome Substring](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Longest%20Palindrome%20Substring/lps.py#L4)
 * [Longest Contiguous Equal Binary](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Longest%20Contiguous%20Equal%20Binary/equal_binary.py#L18)
+* [Longest Increasing Subsequence](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Longest%20Increasing%20Subsequence/lis.py#L4)
+* [Longest Palindrome Substring](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Longest%20Palindrome%20Substring/lps.py#L4)
+* [Matrix Multiplication Ordering](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Matrix%20Multiplication%20Order/matmul_order.py#L3)
+* [Minimum Squared Sums of Chunk Sums](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/MinSumChunk/minSumChunk.py#L15)
+* [Subset Threshold](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/SubsetThreshold/subsetThreshold.py#L16)
 
-## Graphs
-
-### Graph Implementations
-
-* [Adjacency Matrix Graph](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/graphs.py#L58)
-* [Adjacency List Graph](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/graphs.py#L112)
+## [Graphs](https://github.com/antoniojkim/AlgLib/tree/master/Algorithms/Graphs)
 
 ### Graph Algorithms
 
-* [Breadth-First Search](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/BFS/BFS.py#L8)
-* [Depth-First Search](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/DFS/DFS.py#L7)
-* [Topological Sort](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Topological%20Sort/topsort.py#L7)
-* [Kosaraju's Algorithm (Strongly Connected Components)](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Kosaraju's%20Algorithm/kosaraju.py#L11)
+* [Breadth-First Search](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/BFS)
+* [Depth-First Search](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/DFS)
+* [Topological Sort](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Topological%20Sort)
+* [Kosaraju's Algorithm (Strongly Connected Components)](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Kosaraju's%20Algorithm)
 * [Kruskal's Algorithm (Minimum Spanning Tree)](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Kruskal's%20Algorithm/kruskal.py#L8)
 
 ### Shortest Path Algorithms

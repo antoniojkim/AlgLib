@@ -1,15 +1,18 @@
+# -*- coding: utf-8 -*-
 
 import numpy as np
 
+
 def quickselect(N, k):
-    '''
+    """
     Find the kth smallest element in N
 
     Parameters
     ----------
     N: list[int]
     k: int
-    '''
+    """
+
     def swap(i, j):
         nonlocal N
         N[i], N[j] = N[j], N[i]
@@ -42,7 +45,7 @@ def quickselect(N, k):
             else:
                 left = pivot_index + 1
 
-    return select(0, len(N)-1)
+    return select(0, len(N) - 1)
 
 
 if __name__ == "__main__":
@@ -50,5 +53,4 @@ if __name__ == "__main__":
         N = np.random.randint(-100, 100, size=35)
         n = np.random.randint(35)
         kth = quickselect(N, n)
-        assert(kth == sorted(N)[n])
-
+        assert kth == sorted(N)[n]

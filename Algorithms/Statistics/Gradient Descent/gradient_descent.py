@@ -1,17 +1,24 @@
+# -*- coding: utf-8 -*-
 import numpy as np
 
-def default_line_search(x_0, f, g, 
-                        lambdaStepsize = 0.01, 
-                        lambdaMax = 1, **kwargs):
+
+def default_line_search(x_0, f, g, lambdaStepsize=0.01, lambdaMax=1, **kwargs):
     return lambdaStepsize
 
-def test_convergence(x_0, x_1, tolerance=1E-10, relative=False, **kwargs):
-    return abs(x_0-x_1) < (abs(x_0)*tolerance if relative else tolerance)
 
-def gradient_descent(x_0, f, fprime, 
-                     line_search_fn=default_line_search, 
-                     test_convergence_fn=test_convergence,
-                     maxIterations = 100, **kwargs):
+def test_convergence(x_0, x_1, tolerance=1e-10, relative=False, **kwargs):
+    return abs(x_0 - x_1) < (abs(x_0) * tolerance if relative else tolerance)
+
+
+def gradient_descent(
+    x_0,
+    f,
+    fprime,
+    line_search_fn=default_line_search,
+    test_convergence_fn=test_convergence,
+    maxIterations=100,
+    **kwargs
+):
     converged = False
     i = 0
 
@@ -29,4 +36,3 @@ def gradient_descent(x_0, f, fprime,
         i += 1
 
     return x_0, converged, i, f(x_0)
-

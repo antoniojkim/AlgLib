@@ -6,7 +6,7 @@ $$
 \max_{i,j:1\le i\le j\le n}\sum_{l=i}^{j}A[l]
 $$
 
-Let $B$ be a solution array such that $B[j]$ is the maximum subarray that ends at $A[j-1]$, i.e. 
+Let $B$ be a solution array such that $B[j]$ is the maximum subarray that ends at $A[j-1]$, i.e.
 $$
 B[j] = \max_{i,j:1\le i\le j}\sum_{l=i}^{j}A[l]
 $$

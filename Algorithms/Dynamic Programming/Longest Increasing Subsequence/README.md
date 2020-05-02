@@ -6,4 +6,3 @@ Given a sequence of non-negative integers a_1,...,a_n, design an algorithm that 
 
 one of the longest increasing subsequences is 0, 4, 6, 9, 11, 15 so the valid solution for this instance
 is 6. (Note that there are multiple increasing subsequences of length 6 for this example.)
-
