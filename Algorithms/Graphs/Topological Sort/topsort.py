@@ -14,23 +14,23 @@ def topsort(G: Graph) -> List[str]:
     Topologically sort the graph
     """
     i = 0
-    visited = {v: False for v in G.get_vertices()}
-    ft = {v: None for v in G.get_vertices()}
+    visited = set()
+    ft = {v: None for v in G.get_vertices()}  # finishing time
 
     def DFS(u):
         nonlocal i, visited, ft
 
-        visited[u] = True
+        visited.add(u)
 
         for v in G[u]:
-            if not visited[v]:
+            if v not in visited:
                 DFS(v)
 
         ft[u] = i
         i += 1
 
-    for u in visited:
-        if not visited[u]:
+    for u in G.get_vertices():
+        if u not in visited:
             DFS(u)
 
     return sorted(ft, key=ft.get, reverse=True)

@@ -164,8 +164,6 @@ class AdjacencyList(Graph):
         if v is None:
             if self.directed:
                 return ((u, k) for u in self.V for k in self.V[u])
-            elif self.track_in:
-                return ((k, u) for u in self.in_edges for k in self.in_edges[u])
             else:
                 return set(tuple(sorted([u, k])) for u in self.V for k in self.V[u])
 

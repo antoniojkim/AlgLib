@@ -32,18 +32,18 @@ Collection of Implementations of Algorithms
 * [Depth-First Search](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/DFS)
 * [Topological Sort](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Topological%20Sort)
 * [Kosaraju's Algorithm (Strongly Connected Components)](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Kosaraju's%20Algorithm)
-* [Kruskal's Algorithm (Minimum Spanning Tree)](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Kruskal's%20Algorithm/kruskal.py#L8)
+* [Kruskal's Algorithm (Minimum Spanning Tree)](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Kruskal's%20Algorithm/)
 
 ### Shortest Path Algorithms
 
-* [Single Source Shortest Path for DAG](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Shortest%20Path/SSSP%20DAG/ssspdag.py#L9)
-* [Dijkstra's Algorithm](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Shortest%20Path/Dijkstra's%20Algorithm/dijkstra.py#L10)
-* [Bellman-Ford Algorithm](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Shortest%20Path/Bellman-Ford%20Algorithm/bellmanford.py#L9)
+* [Single Source Shortest Path for DAG](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Shortest%20Path/SSSP%20DAG)
+* [Dijkstra's Algorithm](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Shortest%20Path/Dijkstra's%20Algorithm)
+* [Bellman-Ford Algorithm](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Shortest%20Path/Bellman-Ford%20Algorithm/)
 * [Floyd-Warshall Algorithm](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Shortest%20Path/Floyd-Warshall/floydWarshall.py#L8)
 
 ### Graph Problems
 
-* [Alien Dictionary](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Alien%20Dictionary/alien_dictionary.py#L30)
+* [Alien Dictionary](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Alien%20Dictionary/)
 * [Binary Tree to Doubly Linked List](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Binary%20Tree%20To%20Doubly%20Linked%20List/bt_to_dll.py#L36)
 * [Double Linked List to Binary Tree](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Binary%20Tree%20To%20Doubly%20Linked%20List/dll_to_bt.py#L19)
 * [Level Order Traversal](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Graphs/Level%20Order%20Traversal/level_order_traversal.py#L36)

@@ -1,9 +1,16 @@
 # -*- coding: utf-8 -*-
+import os
+import sys
+from typing import List
+from typing import Tuple
 
-from ..graphs import create_graph
+file_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.join(file_dir, "../"))
+
+from graphs import Graph
 
 
-def kruskal(G):
+def kruskal(G: Graph) -> List[Tuple[str, str]]:
     """
     G is a weighted undirected graph
     """
@@ -18,16 +25,13 @@ def kruskal(G):
 
         return find(parent[x])
 
-    def union(u, v):
-        uroot = find(u)
-        vroot = find(v)
+    def union(uroot, vroot):
+        nonlocal parent, rank
 
         if rank[uroot] < rank[vroot]:
             parent[uroot] = vroot
-
         elif rank[uroot] > rank[vroot]:
             parent[vroot] = uroot
-
         else:
             parent[vroot] = uroot
             rank[uroot] += 1
@@ -35,66 +39,10 @@ def kruskal(G):
     E = sorted(list(G.get_edges()), key=lambda x: G.get_weight(x[0], x[1]))
     T = []
     for u, v in E:
-        if find(u) != find(v):  # T union (u, v) does not create a cycle
+        uroot = find(u)
+        vroot = find(v)
+        if uroot != vroot:  # T union (u, v) does not create a cycle
             T.append((u, v))
-            union(u, v)
+            union(uroot, vroot)
 
-    return T  # list(G.get_edges())
-
-
-def test_kruskal(G, expected):
-    mst = kruskal(G)
-
-    mst_cost = 0
-    visited = {v: False for v in G.get_vertices()}
-    for u, v in mst:
-        visited[u] = True
-        visited[v] = True
-        mst_cost += G.get_weight(u, v)
-    if any(not v for v in visited):
-        raise Exception(f"Tkrus is not spanning:  {mst}")
-
-    visited = {v: False for v in visited}
-    expt_cost = 0
-    for u, v in expected:
-        visited[u] = True
-        visited[v] = True
-        expt_cost += G.get_weight(u, v)
-    if any(not v for v in visited):
-        raise Exception(f"Expected is not spanning:  {mst}")
-
-    if mst_cost != expt_cost:
-        raise Exception(f"{mst_cost} != {expt_cost}")
-
-
-if __name__ == "__main__":
-    test_kruskal(
-        create_graph(
-            ["A", "B", "C", "D", "E", "F", "G", "H"],
-            [
-                ("A", "B", 4),
-                ("A", "C", 6),
-                ("A", "D", 1),
-                ("B", "C", 8),
-                ("C", "D", 5),
-                ("C", "F", 2.5),
-                ("C", "H", 7),
-                ("D", "E", 2),
-                ("E", "F", 3),
-                ("F", "G", 7.5),
-                ("G", "H", 9),
-            ],
-            directed=False,
-        ),
-        [
-            ("A", "B"),
-            ("A", "D"),
-            ("D", "E"),
-            ("E", "F"),
-            ("C", "F"),
-            ("C", "H"),
-            ("F", "G"),
-        ],
-    )
-
-    print("All Kruskal's Algorithm Tests Passed!")
+    return T

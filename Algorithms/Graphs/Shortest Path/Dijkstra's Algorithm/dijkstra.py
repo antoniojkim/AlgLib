@@ -1,37 +1,41 @@
 # -*- coding: utf-8 -*-
+import os
 import sys
-
-sys.path.append("../../")
+from typing import Dict
+from typing import List
 
 import numpy as np
 
-from graphs import create_graph
+file_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.join(file_dir, "../../"))
+
+from graphs import Graph
 import heapq
 
 
-def dijkstra(G, s):
-    L = set([s])
+def dijkstra(G: Graph, s: str) -> Dict[str, List[str]]:
+    L = {s}
     R = set([v for v in G.get_vertices() if v != s])
-    SD = {v: None for v in G.get_vertices()}
+    SD = {v: None for v in G.get_vertices()}  # Shortest Distances
     parent = {v: v for v in G.get_vertices()}
     paths = {v: [] for v in G.get_vertices()}
     paths[s] = [s]
     dSoFar = []
     dSoFarDict = {}
-
     i = 0
-    entry = [0, i, s]
+
+    # Initialization
+    dSoFarDict[s] = [0, i, s]
+    heapq.heappush(dSoFar, [0, i, s])
     i += 1
-    dSoFarDict[s] = entry
-    heapq.heappush(dSoFar, entry)
     for v in G.get_vertices():
         if v != s:
-            entry = [np.inf, i, v]
+            dSoFarDict[v] = [np.inf, i, v]
+            heapq.heappush(dSoFar, [np.inf, i, v])
             i += 1
-            dSoFarDict[v] = entry
-            heapq.heappush(dSoFar, entry)
 
     for _ in range(len(SD) - 1):
+        # Extract min
         while dSoFar[0][2] is None:
             heapq.heappop(dSoFar)
 
@@ -42,6 +46,7 @@ def dijkstra(G, s):
         L.add(vprime)
         SD[vprime] = min_d[0]
 
+        # Decrement Key
         for z in G[vprime]:
             if z in R:
                 newDistToZ = SD[vprime] + G.get_weight(vprime, z)
@@ -60,45 +65,3 @@ def dijkstra(G, s):
                     paths[z] = paths[vprime] + [z]
 
     return paths
-
-
-def test_dijkstra(result, expected):
-    for v in expected:
-        if set(result[v]) != set(expected[v]):
-            raise Exception(f"{v}:  {result[v]} != {expected[v]}")
-
-
-if __name__ == "__main__":
-    test_dijkstra(
-        dijkstra(
-            create_graph(
-                ["A", "B", "C", "D", "E", "F", "G", "H"],
-                [
-                    ("A", "B", 4),
-                    ("A", "C", 8),
-                    ("A", "D", 1),
-                    ("B", "C", 3),
-                    ("C", "D", 9),
-                    ("C", "F", 5),
-                    ("C", "H", 4),
-                    ("D", "E", 2),
-                    ("E", "F", 3),
-                    ("F", "G", 2),
-                    ("G", "H", 3),
-                ],
-                directed=False,
-            ),
-            "A",
-        ),
-        {
-            "B": ("A", "B"),
-            "C": ("A", "B", "C"),
-            "D": ("A", "D"),
-            "E": ("A", "D", "E"),
-            "F": ("A", "D", "E", "F"),
-            "G": ("A", "D", "E", "F", "G"),
-            "H": ("A", "B", "C", "H"),
-        },
-    )
-
-    print("All Dijsktra's Algorithm Tests Passed!")
