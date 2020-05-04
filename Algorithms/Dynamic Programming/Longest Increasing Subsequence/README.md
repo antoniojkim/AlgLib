@@ -15,7 +15,7 @@ For
 one of the longest increasing subsequences is `[0, 4, 6, 9, 11, 15]` so the valid solution for this instance
 is 6. (Note that there are multiple increasing subsequences of length 6 for this example.)
 
-## [Implementation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Longest%20Increasing%20Subsequence/lis.py#L7)
+## [Implementation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Longest%20Increasing%20Subsequence/longest_increasing_subsequence.py#L7)
 
 Here is an implementation using dynamic programming:
 

@@ -1,37 +1,8 @@
 # -*- coding: utf-8 -*-
-
-import numpy as np
-import itertools
+from typing import List
 
 
-def naive_max_min_sum_segments(A, k):
-    max_sum = -np.inf
-
-    for ts in itertools.combinations(range(1, len(A)), k - 1):
-        ts = sorted([0] + list(ts) + [len(A)])
-        min_sum = min(sum(A[ts[i - 1] : ts[i]]) for i in range(1, len(ts)))
-        if min_sum > max_sum:
-            max_sum = min_sum
-
-    return max_sum
-
-
-def max_min_sum_segments(A, k):
-    """
-    Split an array of integers A into k contiguous
-    segments such that the minimum of the sums of the
-    segments is maximized. Return the maximum value.
-
-    Parameters
-    ----------
-    A: list[int]
-    k: int
-
-    Returns
-    -------
-    int
-    """
-
+def max_min_sum_segments(A: List[int], k: int) -> int:
     def split(min_sum):
         count = 0
         segment_sum = 0
@@ -54,20 +25,3 @@ def max_min_sum_segments(A, k):
             l = min_sum
 
     return l
-
-
-if __name__ == "__main__":
-
-    assert naive_max_min_sum_segments([6, 3, 2, 8, 7, 5], 3) == 9
-    assert max_min_sum_segments([6, 3, 2, 8, 7, 5], 3) == 9
-
-    assert naive_max_min_sum_segments([5, 7, 4, 2, 8, 1, 6], 3) == 7
-    assert max_min_sum_segments([5, 7, 4, 2, 8, 1, 6], 3) == 7
-
-    assert naive_max_min_sum_segments([6, 5, 3, 8, 9, 10, 4, 7, 10], 4) == 14
-    assert max_min_sum_segments([6, 5, 3, 8, 9, 10, 4, 7, 10], 4) == 14
-
-    for i in range(100):
-        A = np.random.randint(0, 100, size=15)
-        k = np.random.randint(2, 10)
-        assert max_min_sum_segments(A, k) == naive_max_min_sum_segments(A, k)

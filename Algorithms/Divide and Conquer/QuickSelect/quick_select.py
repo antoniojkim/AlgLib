@@ -1,18 +1,10 @@
 # -*- coding: utf-8 -*-
+from typing import List
 
-import numpy as np
+from numpy.random import randint
 
 
-def quickselect(N, k):
-    """
-    Find the kth smallest element in N
-
-    Parameters
-    ----------
-    N: list[int]
-    k: int
-    """
-
+def quickselect(N: List[int], k: int):
     def swap(i, j):
         nonlocal N
         N[i], N[j] = N[j], N[i]
@@ -34,7 +26,7 @@ def quickselect(N, k):
             if left == right:
                 return N[left]
 
-            pivot_index = left + np.random.randint(right - left + 1)
+            pivot_index = left + randint(right - left + 1)
 
             pivot_index = partition(left, right, pivot_index)
 
@@ -46,11 +38,3 @@ def quickselect(N, k):
                 left = pivot_index + 1
 
     return select(0, len(N) - 1)
-
-
-if __name__ == "__main__":
-    for i in range(100):
-        N = np.random.randint(-100, 100, size=35)
-        n = np.random.randint(35)
-        kth = quickselect(N, n)
-        assert kth == sorted(N)[n]

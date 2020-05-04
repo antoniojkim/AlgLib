@@ -38,7 +38,7 @@ Tautology: Only two possibilities
 
 Using this observation we can construct the subproblems used in final algorithm.
 
-## [Implementation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Linear%20Independent%20Set/lis.py#L7)
+## [Implementation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Linear%20Independent%20Set/linear_independent_set.py#L7)
 
 Here is an implementation of the algorithm:
 

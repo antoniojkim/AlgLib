@@ -37,6 +37,8 @@ def test_subset_threshold():
         assert s1[0] == s2[0]
 
         if s1[0]:
-            assert sum(s1[1]) > n * m // 4 and sum(s1[2]) > n * m // 4
-            assert sum(s2[1]) > n * m // 4 and sum(s2[2]) > n * m // 4
+            assert sum(s1[1]) > n * m // 4
+            assert sum(s1[2]) > n * m // 4
+            assert sum(s2[1]) > n * m // 4
+            assert sum(s2[2]) > n * m // 4
             break

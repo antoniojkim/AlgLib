@@ -8,13 +8,13 @@ Collection of implementations of algorithms.
 
 ## Divide and Conquer
 
-* [Binary to Decimal](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Bin%20to%20Dec/binToDec.py#L3)
-* [Karatsuba-Ofman Integer Multiplication](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Karatsuba-Ofman/KO.py#L6)
-* [**Maximum of Minimum of sum of k segments**](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Maximum%20of%20Minimum%20Sum%20of%20Segments/max_min_sum_segments.py#L17)
-* [**Median of Two Sorted Lists**](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Median/median2list.py#L29)
-* [Polynomial Multiplication using Karatsuba-Ofman Variation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Karatsuba-Ofman/poly_mul.py#L6)
-* [QuickSelect](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/QuickSelect/quick_select.py#L4)
-* [Shamos's Algorithm for Closest Pair 2D](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Shamos's%20Algorithm/shamos.py#L21)
+* [Binary to Decimal](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Bin%20to%20Dec)
+* [Karatsuba-Ofman Integer Multiplication](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Karatsuba-Ofman/)
+    * [Polynomial Multiplication using Karatsuba-Ofman Variation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Karatsuba-Ofman)
+* [**Maximum of Minimum of sum of k segments**](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Maximum%20of%20Minimum%20Sum%20of%20Segments)
+* [**Median of Two Sorted Lists**](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Median)
+* [QuickSelect](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/QuickSelect)
+* [Shamos's Algorithm for Closest Pair 2D](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Shamos's%20Algorithm)
 
 ## Dynamic Programming
 * [**0/1 Integer Weight Knapsack Problem**](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/01%20Knapsack)
@@ -25,7 +25,7 @@ Collection of implementations of algorithms.
 * [Longest Palindrome Substring](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Longest%20Palindrome%20Substring)
 * [Matrix Multiplication Ordering](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Matrix%20Multiplication%20Order)
 * [Minimum Squared Sums of Chunk Sums](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/MinSumChunk)
-* [Subset Threshold](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/SubsetThreshold/subsetThreshold.py#L16)
+* [Subset Threshold](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/SubsetThreshold)
 
 ## [Graphs](https://github.com/antoniojkim/AlgLib/tree/master/Algorithms/Graphs)
 
