@@ -19,7 +19,7 @@ Here is an implementation of the algorithm:
 ```python
 def sssp_dag(G: Graph, s: str) -> Dict[str, List[str]]:
     f = topsort(G)
-    SD = {v: (0 if v == s else np.inf) for v in f}  # Shortest Distances
+    SD = {v: (0 if v == s else inf) for v in f}  # Shortest Distances
     paths = {v: [] for v in f}
 
     for v in f:

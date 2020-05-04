@@ -21,7 +21,7 @@ Here is an implementation of the algorithm:
 ```python
 def bellman_ford(G: Graph, s: str) -> Dict[str, List[str]]:
     n = len(list(G.get_vertices()))
-    A = [{v: np.inf for v in G.get_vertices()} for _ in range(n)]
+    A = [{v: inf for v in G.get_vertices()} for _ in range(n)]
 
     A[0][s] = 0
 
@@ -32,7 +32,7 @@ def bellman_ford(G: Graph, s: str) -> Dict[str, List[str]]:
         converged = True
         for v in G.get_vertices():
             A[i][v] = A[i - 1][v]
-            alt = np.inf
+            alt = inf
             alt_path = None
             for u in G.get_in_edges(v):
                 if A[i - 1][u] + G.get_weight(u, v) < alt:

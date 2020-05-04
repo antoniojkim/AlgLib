@@ -12,7 +12,7 @@ Here is an implementation:
 def floyd_warshall(G: Graph) -> Dict[str, Dict[str, float]]:
     V = list(G.get_vertices())
     n = len(V)
-    A = {u: {v: [np.inf for _ in range(n)] for v in V} for u in V}
+    A = {u: {v: [inf for _ in range(n)] for v in V} for u in V}
 
     for i in V:
         A[i][i][0] = 0

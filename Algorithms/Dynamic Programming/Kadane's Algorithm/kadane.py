@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
-import numpy as np
+from typing import List
+
+from numpy import zeros
 
 
-def kadane(A):
-    B = np.zeros(len(A))
+def kadane(A: List[int]):
+    B = zeros(len(A))
     B[0] = A[0]
     msub = B[0]
     for j in range(1, len(B)):
@@ -11,13 +13,3 @@ def kadane(A):
         msub = max(msub, B[j])
 
     return msub
-
-
-def test_kadane(result, expected):
-    if result != expected:
-        raise Exception(f"{result} != {expected}")
-
-
-if __name__ == "__main__":
-    test_kadane(kadane([1, -2, 3, -4, 5, 6, 7, -8, 9, -10]), 19)
-    print("All Kadane's Algorithm Tests Passed!")

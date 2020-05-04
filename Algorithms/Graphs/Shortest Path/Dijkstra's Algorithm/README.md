@@ -26,8 +26,8 @@ def dijkstra(G: Graph, s: str) -> Dict[str, List[str]]:
     i += 1
     for v in G.get_vertices():
         if v != s:
-            dSoFarDict[v] = [np.inf, i, v]
-            heapq.heappush(dSoFar, [np.inf, i, v])
+            dSoFarDict[v] = [inf, i, v]
+            heapq.heappush(dSoFar, [inf, i, v])
             i += 1
 
     for _ in range(len(SD) - 1):

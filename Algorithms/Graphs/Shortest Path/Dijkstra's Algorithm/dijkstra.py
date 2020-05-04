@@ -4,7 +4,7 @@ import sys
 from typing import Dict
 from typing import List
 
-import numpy as np
+from numpy import inf
 
 file_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.join(file_dir, "../../"))
@@ -30,8 +30,8 @@ def dijkstra(G: Graph, s: str) -> Dict[str, List[str]]:
     i += 1
     for v in G.get_vertices():
         if v != s:
-            dSoFarDict[v] = [np.inf, i, v]
-            heapq.heappush(dSoFar, [np.inf, i, v])
+            dSoFarDict[v] = [inf, i, v]
+            heapq.heappush(dSoFar, [inf, i, v])
             i += 1
 
     for _ in range(len(SD) - 1):
