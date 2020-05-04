@@ -4,7 +4,7 @@ from typing import List
 from numpy import zeros
 
 
-def lis(V: List[int]):
+def linear_independent_set(V: List[int]):
     A = zeros(len(V) + 1, dtype=int)
     S = [[] for _ in range(len(A))]
     A[0] = 0

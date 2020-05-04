@@ -1,4 +1,5 @@
 .vscode/
 *__pycache__*
+*pytest*
 *.ipynb_checkpoints*
 template.py
