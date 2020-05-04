@@ -4,8 +4,8 @@ import sys
 from typing import List
 
 file_dir = os.path.dirname(os.path.abspath(__file__))
-sys.path.append(os.path.join(file_dir, "../"))
-sys.path.append(os.path.join(file_dir, "../Topological Sort"))
+sys.path.append(os.path.join(file_dir, "../../"))
+sys.path.append(os.path.join(file_dir, "../../Topological Sort"))
 
 from graphs import create_graph
 from topsort import topsort
