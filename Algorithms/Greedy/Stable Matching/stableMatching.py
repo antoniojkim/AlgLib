@@ -1,8 +1,16 @@
 # -*- coding: utf-8 -*-
 from collections import deque
+from typing import Any
+from typing import Dict
+from typing import List
 
 
-def stable_matching(companies, company_rankings, interns, intern_rankings):
+def stable_matching(
+    companies: List[Any],
+    company_rankings: Dict[Any, List[Any]],
+    interns: List[Any],
+    intern_rankings: Dict[Any, List[Any]],
+):
     """
     Use Gale and Shapley's Algorithm to provide stable matching
     between companies and interns
@@ -28,34 +36,3 @@ def stable_matching(companies, company_rankings, interns, intern_rankings):
                 unmatched_companies.append(company)
 
     return matchings
-
-
-def assert_equals(sol, opt):
-    for k in sol:
-        if sol[k] != opt[k]:
-            print(sol, "!=", opt)
-            exit(1)
-
-
-if __name__ == "__main__":
-    assert_equals(
-        stable_matching(
-            companies=[1, 2, 3, 4],
-            company_rankings={
-                1: ["A", "B", "C", "D"],
-                2: ["A", "D", "C", "B"],
-                3: ["A", "C", "B", "D"],
-                4: ["A", "B", "C", "D"],
-            },
-            interns=["A", "B", "C", "D"],
-            intern_rankings={
-                "A": [1, 3, 4, 2],
-                "B": [4, 3, 2, 1],
-                "C": [2, 3, 1, 4],
-                "D": [3, 4, 2, 1],
-            },
-        ),
-        {"A": 1, "D": 2, "C": 3, "B": 4},
-    )
-
-    print("All Stable Matching Tests Passed!")

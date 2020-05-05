@@ -14,7 +14,7 @@ The ["primary-school"](https://en.wikipedia.org/wiki/Multiplication_algorithm#Lo
 
 The Karatsuba-Ofman improves upon the classic long multiplication algorithm for *integers only*.
 
-## [Implementation]((https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Karatsuba-Ofman/karatsuba_ofman.py#L5)
+## [Implementation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Karatsuba-Ofman/karatsuba_ofman.py#L5)
 
 Here is an implementation:
 
@@ -50,7 +50,7 @@ Input: 2 polynomials `X` and `Y` of degree `n`.
 
 Output: `Z = XY`
 
-## [Implementation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Karatsuba-Ofman/poly_mul.py#L10)
+## [Implementation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Karatsuba-Ofman/poly_mul.py#L11)
 
 ```python
 def poly_mul(X: List[int], Y: List[int]):

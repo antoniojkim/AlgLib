@@ -10,7 +10,7 @@ Collection of implementations of algorithms.
 
 * [Binary to Decimal](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Bin%20to%20Dec)
 * [Karatsuba-Ofman Integer Multiplication](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Karatsuba-Ofman/)
-    * [Polynomial Multiplication using Karatsuba-Ofman Variation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Karatsuba-Ofman)
+    * [Polynomial Multiplication using Karatsuba-Ofman Variation](https://github.com/antoniojkim/AlgLib/tree/master/Algorithms/Divide%20and%20Conquer/Karatsuba-Ofman#karatsuba-ofman-algorithm-for-polynomial-multiplication)
 * [**Maximum of Minimum of sum of k segments**](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Maximum%20of%20Minimum%20Sum%20of%20Segments)
 * [**Median of Two Sorted Lists**](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Median)
 * [QuickSelect](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/QuickSelect)
@@ -54,11 +54,11 @@ Collection of implementations of algorithms.
 
 ## Greedy
 
-* [Stable Matching](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Stable%20Matching/stableMatching.py#L3)
-* [Merge K Lists](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Merge/mergeKlists.py#L5)
+* [Stable Matching](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Stable%20Matching)
+* [Merge K Lists](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Merge%20K%20Lists)
 * [Set Intersection](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Set%20Intersection/set_intersection.py)
-* [Well-Formed Brackets](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Well-formed%20Brackets/wf_brackets.py#L28)
-* [Odd One Out](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Odd%20One%20Out/odd_one_out.py#L6)
+* [Well-Formed Brackets](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Well-formed%20Brackets/wf_brackets.py)
+* [Odd One Out](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Odd%20One%20Out/odd_one_out.py)
 
 ## Statistics
 
