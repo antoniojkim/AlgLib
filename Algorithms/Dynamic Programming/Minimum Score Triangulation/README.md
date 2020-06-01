@@ -26,7 +26,7 @@ Explanation: The minimum score triangulation has score 1*1*3 + 1*1*4 + 1*1*5 + 1
 
 ## Solution
 
-We can construct a dynamic programming solution for this problem. Notice that anytime we are computing the score of a particular triangulation, it is the minimum of the current best triangulation and the new traingulation plus the minimum scores for the two sub triangulations.
+We can construct a dynamic programming solution for this problem. Notice that anytime we are computing the score of a particular triangulation, it is the minimum of the current best triangulation and the new triangulation plus the minimum scores for the two sub triangulations.
 
 ## [Implementation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Minimum%20Score%20Triangulation/min_score_triangulation.py#L8)
 
