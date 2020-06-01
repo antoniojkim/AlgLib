@@ -15,6 +15,7 @@ Collection of implementations of algorithms.
 * [**Median of Two Sorted Lists**](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Median)
 * [QuickSelect](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/QuickSelect)
 * [Shamos's Algorithm for Closest Pair 2D](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Shamos's%20Algorithm)
+* [Single Element in a Sorted Array](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Single%20Element%20in%20a%20Sorted%20Array)
 
 ## Dynamic Programming
 * [**0/1 Integer Weight Knapsack Problem**](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/01%20Knapsack)
