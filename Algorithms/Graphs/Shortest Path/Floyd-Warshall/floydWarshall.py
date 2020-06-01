@@ -3,7 +3,7 @@ import os
 import sys
 from typing import Dict
 
-import numpy as np
+from numpy import inf
 
 file_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.join(file_dir, "../../"))
@@ -14,7 +14,7 @@ from graphs import Graph
 def floyd_warshall(G: Graph) -> Dict[str, Dict[str, float]]:
     V = list(G.get_vertices())
     n = len(V)
-    A = {u: {v: [np.inf for _ in range(n)] for v in V} for u in V}
+    A = {u: {v: [inf for _ in range(n)] for v in V} for u in V}
 
     for i in V:
         A[i][i][0] = 0

@@ -4,7 +4,7 @@ import sys
 from typing import Dict
 from typing import List
 
-import numpy as np
+from numpy import inf
 
 file_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.join(file_dir, "../../"))
@@ -16,7 +16,7 @@ from topsort import topsort
 
 def sssp_dag(G: Graph, s: str) -> Dict[str, List[str]]:
     f = topsort(G)
-    SD = {v: (0 if v == s else np.inf) for v in f}  # Shortest Distances
+    SD = {v: (0 if v == s else inf) for v in f}  # Shortest Distances
     paths = {v: [] for v in f}
 
     for v in f:

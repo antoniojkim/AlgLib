@@ -33,7 +33,7 @@ def test_longest_contiguous_equal_binary_1():
     assert equal_binary([0, 1, 0, 0, 0, 1, 1]) == 6
 
 
-def test_longest_contiguous_equal_binary_1():
+def test_longest_contiguous_equal_binary_2():
     for i in range(100):
         arr = np.random.randint(2, size=i)
         assert naive_equal_binary(arr) == equal_binary(arr)
