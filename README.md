@@ -19,6 +19,7 @@ Collection of implementations of algorithms.
 
 ## Dynamic Programming
 * [**0/1 Integer Weight Knapsack Problem**](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/01%20Knapsack)
+    * [Coin Change](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Coin%20Change)
 * [Kadane's Algorithm (Maximum Subarray)](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Kadane's%20Algorithm)
 * [Linear Independent Set](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Linear%20Independent%20Set/)
 * [Longest Contiguous Equal Binary](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Longest%20Contiguous%20Equal%20Binary)
