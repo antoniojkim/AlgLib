@@ -30,6 +30,7 @@ Collection of implementations of algorithms.
 * [Subset Threshold](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/SubsetThreshold)
 * [Minimum Score Triangulation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Minimum%20Score%20Triangulation)
 * [Climbing Stairs](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Climbing%20Stairs)
+* [Knight Probability in Chessboard](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Knight%20Probability%20in%20Chessboard)
 
 ## [Graphs](https://github.com/antoniojkim/AlgLib/tree/master/Algorithms/Graphs)
 

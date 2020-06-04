@@ -5,7 +5,7 @@ from numpy import sum, zeros
 moves = ((2, 1), (2, -1), (-2, 1), (-2, -1), (1, 2), (-1, 2), (1, -2), (-1, -2))
 
 
-def knight_probability_in_chessboard(self, N: int, K: int, r: int, c: int) -> float:
+def knight_probability_in_chessboard(N: int, K: int, r: int, c: int) -> float:
     probs = zeros((N, N))
     probs[r][c] = 1  # Probability of being on square (r, c) on step 0
     for k in range(K):
