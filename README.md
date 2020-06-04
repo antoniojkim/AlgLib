@@ -67,6 +67,7 @@ Collection of implementations of algorithms.
 * [**Max Points on a Line**](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Max%20Points%20on%20a%20Line)
 * [**Minimum Window Substring**](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Minimum%20Window%20Substring)
 * [3Sum](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/3Sum)
+* [Add Digits](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Add%20Digits)
 * [Set Intersection](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Set%20Intersection/set_intersection)
 * [Well-Formed Brackets](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Well-formed%20Brackets/wf_brackets)
 * [Odd One Out](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Greedy/Odd%20One%20Out/odd_one_out)
