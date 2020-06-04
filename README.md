@@ -28,6 +28,7 @@ Collection of implementations of algorithms.
 * [Minimum Squared Sums of Chunk Sums](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/MinSumChunk)
 * [Subset Threshold](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/SubsetThreshold)
 * [Minimum Score Triangulation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Minimum%20Score%20Triangulation)
+* [Climbing Stairs](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Climbing%20Stairs)
 
 ## [Graphs](https://github.com/antoniojkim/AlgLib/tree/master/Algorithms/Graphs)
 
