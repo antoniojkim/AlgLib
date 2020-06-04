@@ -24,7 +24,7 @@ The total probability the knight stays on the board is 0.0625.
 
 For each step we take, we keep track of the probability that we are on any given square on that step. In the end, we just sum up the probabilities
 
-## [Implementation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Knight%20Probability%20in%20Chessboard/knight_probability_in_chessboard.pyL#8)
+## [Implementation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Knight%20Probability%20in%20Chessboard/knight_probability_in_chessboard.py#L8)
 
 ```python
 def knight_probability_in_chessboard(self, N: int, K: int, r: int, c: int) -> float:

@@ -22,7 +22,7 @@ Output: [-1,-1]
 
 The idea is to use binary search to find the leftmost occurence of the target and the rightmost occurence of the target.
 
-## [Implementation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array/find_first_and_last_position_of_element_in_sorted_array.pyL#5)
+## [Implementation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array/find_first_and_last_position_of_element_in_sorted_array.py#L5)
 
 ```python
 def find_first_and_last_position_of_element_in_sorted_array(nums: List[int], target: int) -> List[int]:

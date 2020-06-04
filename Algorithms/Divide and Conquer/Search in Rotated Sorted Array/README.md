@@ -26,7 +26,7 @@ Output: -1
 
 We use a modified binary search.
 
-## [Implementation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Search%20in%20Rotated%20Sorted%20Array/search_in_rotated_sorted_array.pyL#5)
+## [Implementation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Divide%20and%20Conquer/Search%20in%20Rotated%20Sorted%20Array/search_in_rotated_sorted_array.py#L5)
 
 ```python
 def search_in_rotated_sorted_array(self, nums: List[int], target: int) -> int:

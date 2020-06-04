@@ -19,7 +19,7 @@ Output: -1
 
 We choose a top down dynamic programming approach. Let `S` be the optimal solution. Notice that the optimal solution is the optimal solution for `amount - c` plus one more coin with value `c`. However, since we don't know which coin this might be, we try out every single coin and take the one that produces the least number of coins.
 
-## [Implementation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Coin%20Change/coin_change.pyL#8)
+## [Implementation](https://github.com/antoniojkim/AlgLib/blob/master/Algorithms/Dynamic%20Programming/Coin%20Change/coin_change.py#L8)
 
 ```python
 def coin_change(self, coins: List[int], amount: int) -> int:
